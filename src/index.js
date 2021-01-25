@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { MAX } from './app/App'
+import { App, MAX } from './app/App'
 
 console.log('test ', MAX)
 
@@ -11,6 +11,7 @@ doSome('666-999')
 export const Ap = () => {
     return (
         <div>
+            <App />
             rand: {Math.random()}
         </div>
     )

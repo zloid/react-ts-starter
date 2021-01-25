@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
     target: ['web', 'es5'],
-    entry: path.resolve(__dirname, './src/index.js'),
+    entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build'),
@@ -28,7 +28,10 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'modern JS Single Page Application',
+            title: 'React TS starter_',
+            templateContent: `
+            <!doctype html><html><head><meta charset="utf-8"><title>React TS starter</title><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><div id="root"></div></body></html>
+          `
         }),
     ],
 }
