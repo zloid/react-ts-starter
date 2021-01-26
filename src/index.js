@@ -1,20 +1,16 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { App, MAX } from './app/App'
 
-console.log('test ', MAX)
-
-const doSome = (param) => console.log(param + 2980)
-doSome('666-999')
-
-
-export const Ap = () => {
+const SomeReactComponent = () => {
     return (
         <div>
-            <App />
-            rand: {Math.random()}
+            <h1>Hello</h1>
+            <h2>World</h2>
+            <h3>
+                <u>and React! {Math.random()}</u>
+            </h3>
         </div>
     )
 }
 
-render(<Ap />, document.getElementById('root'))
+render(<SomeReactComponent />, document.getElementById('root'))
